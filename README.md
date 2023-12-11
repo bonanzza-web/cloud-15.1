@@ -35,9 +35,12 @@ Resource Terraform для Yandex Cloud:
 ### Ответы:
 
 1. 
+ ![alt text](https://github.com/bonanzza-web/cloud-15.1/blob/main/screens/vpc.png)
 
 2. 
- 
+ ![alt text](https://github.com/bonanzza-web/cloud-15.1/blob/main/screens/subnet.png)
+
+ ![alt text](https://github.com/bonanzza-web/cloud-15.1/blob/main/screens/vm.png)
 ```
 ubuntu@public-vm:~$ ip a
 1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
@@ -66,7 +69,11 @@ rtt min/avg/max/mdev = 0.361/0.465/0.735/0.156 ms
 ```
 
 3. 
+ ![alt text](https://github.com/bonanzza-web/cloud-15.1/blob/main/screens/subnet.png)
 
+![alt text](https://github.com/bonanzza-web/cloud-15.1/blob/main/screens/route-table.png)
+
+ ![alt text](https://github.com/bonanzza-web/cloud-15.1/blob/main/screens/vm.png)
 
 ```
 ubuntu@public-vm:~$ ssh ubuntu@192.168.20.17
@@ -94,6 +101,7 @@ PING ya.ru (5.255.255.242) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.740/1.197/2.320/0.650 ms
 ```
 
+Чтобы подключиться с public к private сначала я запустил терраформ без создания private, затем сгенерил ssh ключи на public, скопировал их в локальный файл, добавил в локальную переменную, и запустил private с ключом public. По условию задания все получилось.
 
 ---
 ### Задание 2. AWS* (задание со звёздочкой)
